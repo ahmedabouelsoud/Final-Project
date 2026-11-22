@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover beautiful destinations, explore different cultures, and plan your next adventure."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Explore The World — Find your next adventure</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Explore home"
+        >Explore<span>.</span></a
+      >
+      <nav
+        class="primary-navigation"
+        id="primary-navigation"
+        aria-label="Main navigation"
+      >
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+      <a class="button button--dark header-cta" href="#destinations"
+        >Explore Now <span aria-hidden="true">↗</span></a
+      >
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Discover the world</p>
+          <h1 id="hero-title">Explore The<br /><span>Beautiful World</span></h1>
+          <p class="hero__description">
+            Discover amazing places, explore different cultures and experience
+            unforgettable journeys.
+          </p>
+          <a class="button button--gold" href="#destinations"
+            >Start Exploring <span aria-hidden="true">→</span></a
+          >
+          <div class="hero__scroll" aria-hidden="true">
+            <span></span> Scroll to explore
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="destinations section"
+        id="destinations"
+        aria-labelledby="destinations-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Your next adventure</p>
+          <h2 id="destinations-title">Popular Destinations</h2>
+          <p>Explore some of the most beautiful cities in the world.</p>
+        </div>
+
+        <div class="destination-card" aria-live="polite" aria-atomic="true">
+          <article class="destination-info" aria-labelledby="city-name">
+            <p class="destination-count">
+              <span id="current-number">01</span>
+              <span aria-hidden="true">/</span> <span class="sr-only">of</span>
+              <span id="total-number">04</span>
+            </p>
+            <p class="country" id="country-name">EGYPT</p>
+            <h3 id="city-name">Cairo</h3>
+            <p class="destination-description" id="city-description">
+              Cairo is a historic city known for its ancient Egyptian
+              civilization and famous landmarks.
+            </p>
+            <dl class="destination-facts">
+              <div>
+                <dt>Continent</dt>
+                <dd id="city-continent">Africa</dd>
+              </div>
+              <div>
+                <dt>Famous Food</dt>
+                <dd id="city-food">Koshari, Foul</dd>
+              </div>
+              <div>
+                <dt>Famous Place</dt>
+                <dd id="city-place">Pyramids of Giza</dd>
+              </div>
+              <div>
+                <dt>Language</dt>
+                <dd id="city-language">Arabic</dd>
+              </div>
+            </dl>
+            <button
+              class="button button--dark destination-link"
+              id="explore-link"
+              type="button"
+            >
+              Explore More
+            </button>
+          </article>
+          <figure class="destination-visual">
+            <img
+              id="city-image"
+              src="images/cairo.jpg"
+              alt="The Great Pyramid of Giza, Egypt"
+            />
+            <figcaption class="image-label">
+              <span>Destination</span>
+              <strong id="image-number">01</strong>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="carousel-controls"
+          role="group"
+          aria-label="Destination carousel controls"
+        >
+          <button
+            class="button button--dark"
+            id="prev-button"
+            type="button"
+            aria-label="Previous destination"
+          >
+            <span aria-hidden="true">←</span> Previous
+          </button>
+          <div
+            class="carousel-dots"
+            role="group"
+            aria-label="Choose a destination"
+          >
+            <button
+              type="button"
+              aria-label="Show Cairo"
+              aria-current="true"
+            ></button>
+            <button type="button" aria-label="Show Kyoto"></button>
+            <button type="button" aria-label="Show Milan"></button>
+            <button type="button" aria-label="Show Paris"></button>
+          </div>
+          <button
+            class="button button--dark"
+            id="next-button"
+            type="button"
+            aria-label="Next destination"
+          >
+            Next <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Travel. Discover. Enjoy.</h2>
+        <p>Every destination has a story. Let’s discover it together.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year">2026</span> Explore The World. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
